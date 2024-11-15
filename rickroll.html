@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rickroll Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      background-color: #f54242;
+      color: white;
+      font-size: 20px;
+      border: none;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #ff7878;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rickroll Button</h1>
+  <p>Click the button below to play a classic meme song!</p>
+  <button id="rickroll-button">Play Song</button>
+  <audio id="rickroll-audio" src="https://www.myinstants.com/media/sounds/rick-roll.mp3"></audio>
+
+  <script>
+    const button = document.getElementById('rickroll-button');
+    const audio = document.getElementById('rickroll-audio');
+
+    button.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+</body>
+</html>
